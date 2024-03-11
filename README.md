@@ -15,20 +15,24 @@ pip install opencv-python
 ```python
 from pencil_sketch import pencil_sketch
 
-# Replace "path/to/your/image.jpg" with the path to your RGB image file.
-# Make sure to append 'r' before path string as below
-# Otherwise, based on OS, file paths 1st characters can be considered as special characters
 sketch = pencil_sketch(r"path/to/your/image.jpg")
 cv2.imshow('Pencil Sketch', sketch)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
+> [!NOTE]
+
+- Replace "path/to/your/image.jpg" with the path to your RGB image file.
+- Make sure to append 'r' before path string as below.
+- Otherwise, based on the OS, file paths 1st characters can be considered as special characters.\
+Eg: "./new" can be treated as `/n` new line
+
 ## Output
 
-![Sample Chart]("./media/sample1.png")
+![Sample Chart](./media/sample1.png)
 
-![Sample anime picture]("./media/sample2.png")
+![Sample anime picture](./media/sample2.png)
 
 ## License
 
